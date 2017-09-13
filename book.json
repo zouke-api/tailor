@@ -3,11 +3,11 @@
     "plugins": ["edit-link", "prism", "github"],
     "pluginsConfig": {
         "edit-link": {
-            "base": "https://github.com/zouke-api/tailor",
+            "base": "https://github.com/zouke-api/tailor/blob/master",
             "label": "Edit This Page"
         },
         "github": {
-            "url": "https://github.com/zouke-api/tailor"
+            "url": "https://github.com/zouke-api/tailor/tree/master"
         }
     }
 }
