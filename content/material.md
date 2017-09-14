@@ -270,6 +270,7 @@
 
 ``` json
 {
+    "type": "keyword/city/gps",
     "keyword": ["巴黎"],
     "city": 10000,
     "gps": { "lat": 1, "lng": 1 }
