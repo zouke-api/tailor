@@ -1,4 +1,5 @@
 - [资源](content/resource.md)
+- [素材管理](content/material.md)
 - [用户](content/user.md)
 - [相册](content/album.md)
 - [文章](content/article.md)
