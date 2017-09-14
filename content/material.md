@@ -261,7 +261,6 @@
 
 **说明**：若无keyword字段，则返回用户名下所有标签。文本和图片**共用一套标签**
 
-
 ### 12. /tailor/material/query-system-text
 
 **描述**：获取系统文本素材
