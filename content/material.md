@@ -261,3 +261,44 @@
 
 **说明**：若无keyword字段，则返回用户名下所有标签。文本和图片**共用一套标签**
 
+
+### 12. /tailor/material/query-system-text
+
+**描述**：获取系统文本素材
+
+**request**：
+
+``` json
+{
+    "keyword": ["巴黎"],
+    "city": 10000,
+    "gps": { "lat": 1, "lng": 1 }
+}
+```
+
+**response**：
+
+``` json
+{
+    "code": 0,
+    "result": [
+        { 
+            "city": "巴黎",
+            "list": [ "一段文本", "另一段文本" ]
+        },
+        {
+            "city": "另一个城市",
+            "list": [ "另一个城市的文本" ]
+        }
+    ]
+}
+```
+
+**说明**：查询字段三个只传其一，传`city`和`gps`字段时，返回距离目标最近的四个城市的结果
+
+### 13. /tailor/material/query-system-image
+
+**描述**：获取系统图片素材
+
+**说明**：同上
+
