@@ -284,11 +284,35 @@
     "result": [
         { 
             "city": "巴黎",
-            "list": [ "一段文本", "另一段文本" ]
+            "list": [ 
+                {
+                    "id": 10000,
+                    "content": "一段文本",
+                    "tags": [
+                        { "code": 10000, "type": "city", "name": "巴黎" },
+                        { "code": 10001, "type": "custom", "name": "其它标签" }
+                    ]
+                }, 
+                {
+                    "id": 10001,
+                    "content": "另一段文本",
+                    "tags": [
+                        { "code": 10000, "type": "city", "name": "巴黎" },
+                        { "code": 10001, "type": "custom", "name": "其它标签" }
+                    ]
+                }
+            ]
         },
         {
             "city": "另一个城市",
-            "list": [ "另一个城市的文本" ]
+            "list": [{
+                    "id": 10003,
+                    "content": "另一个城市的文本",
+                    "tags": [
+                        { "code": 10000, "type": "city", "name": "巴黎" },
+                        { "code": 10001, "type": "custom", "name": "其它标签" }
+                    ]
+            }]
         }
     ]
 }
