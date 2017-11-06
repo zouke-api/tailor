@@ -1,0 +1,754 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>素材管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="user.html" />
+    
+    
+    <link rel="prev" href="resource.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="resource.html">
+            
+                <a href="resource.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="material.html">
+            
+                <a href="material.html">
+            
+                    
+                    素材管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="user.html">
+            
+                <a href="user.html">
+            
+                    
+                    用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="album.html">
+            
+                <a href="album.html">
+            
+                    
+                    相册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="article.html">
+            
+                <a href="article.html">
+            
+                    
+                    文章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >素材管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="1-tailormaterialquery-text">1. /tailor/material/query-text</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x6587;&#x672C;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token property">&quot;page&quot;</span><span class="token operator">:</span><span class="token number">0</span> <span class="token punctuation">}</span> # page&#x4ECE;<span class="token number">0</span>&#x5F00;&#x59CB;
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x6587;&#x672C;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10001</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5176;&#x5B83;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x53EF;&#x4EE5;&#x4E0D;&#x4F20;&#x53C2;&#x6570;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6211;&#x7684;&#x6587;&#x672C;&#x7D20;&#x6750;</p>
+<h3 id="2-tailormaterialcreate-text--&#x5DF2;&#x7ECF;&#x5E9F;&#x5F03;-&#x62C6;&#x5206;&#x4E3A;2&#x4E2A;&#x63A5;&#x53E3;-&#x81EA;&#x5DF1;&#x7F16;&#x8F91;&#x7684;&#x548C;&#x7CFB;&#x7EDF;&#x5BFC;&#x5165;">2. /tailor/material/create-text # &#x5DF2;&#x7ECF;&#x5E9F;&#x5F03;-&#x62C6;&#x5206;&#x4E3A;2&#x4E2A;&#x63A5;&#x53E3;-&#x81EA;&#x5DF1;&#x7F16;&#x8F91;&#x7684;&#x548C;&#x7CFB;&#x7EDF;&#x5BFC;&#x5165;</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x6587;&#x672C;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x8FD9;&#x662F;&#x65B0;&#x5EFA;&#x7684;&#x6587;&#x672C;&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10005</span> <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="3-tailormaterialupdate-text">3. /tailor/material/update-text</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x66F4;&#x65B0;&#x7528;&#x6237;&#x6587;&#x672C;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> 
+    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x8FD9;&#x662F;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x6587;&#x672C;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token punctuation">{</span><span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;code&quot;</span><span class="token operator">:</span><span class="token number">1111</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span> 
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="4-tailormaterialchange-text-tags">4. /tailor/material/change-text-tags</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x66F4;&#x6539;&#x7528;&#x6237;&#x6587;&#x672C;&#x6807;&#x7B7E;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x65B0;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10002</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x65B0;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="5-tailormaterialdelete-text">5. /tailor/material/delete-text</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x5220;&#x9664;&#x7528;&#x6237;&#x6587;&#x672C;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="6-tailormaterialget-similar-text">6. /tailor/material/get-similar-text</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x83B7;&#x53D6;&#x4E0E;&#x7ED9;&#x5B9A;&#x6587;&#x672C;&#x76F8;&#x4F3C;&#x7684;&#x6587;&#x672C;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x7ED9;&#x5B9A;&#x6587;&#x672C;&quot;</span> <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x6587;&#x672C;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10001</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5176;&#x5B83;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;similar&quot;</span><span class="token operator">:</span> <span class="token number">85</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x4E2D;&#x7684;similar&#x5B57;&#x6BB5;&#x8868;&#x793A;&#x76F8;&#x4F3C;&#x5EA6;&#x7684;&#x767E;&#x5206;&#x6BD4;</p>
+<h3 id="7-tailormaterialquery-image">7. /tailor/material/query-image</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x56FE;&#x7247;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">&quot;page&quot;</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;url-to-image&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10001</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5176;&#x5B83;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x53EF;&#x4EE5;&#x4E0D;&#x4F20;&#x53C2;&#x6570;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6211;&#x7684;&#x6587;&#x672C;&#x7D20;&#x6750;</p>
+<h3 id="8-tailormaterialcreate-image">8. /tailor/material/create-image</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x56FE;&#x7247;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> <span class="token property">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;url-to-image&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> <span class="token property">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;url-to-image2&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;data&quot;</span><span class="token operator">:</span><span class="token null">null</span> <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="9-tailormaterialchange-image-tags">9. /tailor/material/change-image-tags</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x66F4;&#x6539;&#x7528;&#x6237;&#x56FE;&#x7247;&#x6807;&#x7B7E; </p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x65B0;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10002</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x65B0;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="10-tailormaterialdelete-image">10. /tailor/material/delete-image</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x5220;&#x9664;&#x7528;&#x6237;&#x56FE;&#x7247;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="11-tailormaterialquery-tags">11. /tailor/material/query-tags</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x6839;&#x636E;&#x5173;&#x952E;&#x5B57;&#x67E5;&#x8BE2;&#x8BE5;&#x7528;&#x6237;&#x7684;&#x6807;&#x7B7E;&#x548C;&#x7CFB;&#x7EDF;&#x6807;&#x7B7E;&#x7B49; </p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6807;&#x7B7E;&#x540D;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10002</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x65B0;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x82E5;&#x65E0;keyword&#x5B57;&#x6BB5;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7528;&#x6237;&#x540D;&#x4E0B;&#x6240;&#x6709;&#x6807;&#x7B7E;&#x3002;&#x6587;&#x672C;&#x548C;&#x56FE;&#x7247;<strong>&#x5171;&#x7528;&#x4E00;&#x5957;&#x6807;&#x7B7E;</strong></p>
+<h3 id="12-tailormaterialquery-system-text--&#x5E9F;&#x5F03;-&#x6539;&#x7528;20">12. /tailor/material/query-system-text # &#x5E9F;&#x5F03; &#x6539;&#x7528;20</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x83B7;&#x53D6;&#x7CFB;&#x7EDF;&#x6587;&#x672C;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;keyword/city/gps&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;gps&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;lat&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token property">&quot;lng&quot;</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;result&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> 
+            <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span> 
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x4E00;&#x6BB5;&#x6587;&#x672C;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10001</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5176;&#x5B83;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10001</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x53E6;&#x4E00;&#x6BB5;&#x6587;&#x672C;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10001</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5176;&#x5B83;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x53E6;&#x4E00;&#x4E2A;&#x57CE;&#x5E02;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10003</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x53E6;&#x4E00;&#x4E2A;&#x57CE;&#x5E02;&#x7684;&#x6587;&#x672C;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10001</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5176;&#x5B83;&#x6807;&#x7B7E;&quot;</span> <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x4E09;&#x4E2A;&#x53EA;&#x4F20;&#x5176;&#x4E00;&#xFF0C;&#x4F20;<code>city</code>&#x548C;<code>gps</code>&#x5B57;&#x6BB5;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x8DDD;&#x79BB;&#x76EE;&#x6807;&#x6700;&#x8FD1;&#x7684;&#x56DB;&#x4E2A;&#x57CE;&#x5E02;&#x7684;&#x7ED3;&#x679C;</p>
+<h3 id="13-tailormaterialquery-system-image--&#x5E9F;&#x5F03;">13. /tailor/material/query-system-image # &#x5E9F;&#x5F03;</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x83B7;&#x53D6;&#x7CFB;&#x7EDF;&#x56FE;&#x7247;&#x7D20;&#x6750;</p>
+<p><strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x540C;&#x4E0A;</p>
+<h3 id="14-tailormaterialassociate-sys-tags">14. /tailor/material/associate-sys-tags</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x8054;&#x60F3;&#x7CFB;&#x7EDF;&#x6807;&#x7B7E;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        ...
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="15-tailormaterialcal-similar">15. /tailor/material/cal-similar</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x8BA1;&#x7B97;&#x6587;&#x672C;&#x76F8;&#x4F3C;&#x5EA6; &#x8FD4;&#x56DE;&#x76F8;&#x4F3C;&#x5EA6; &#x548C;&#x5339;&#x914D;&#x7684;&#x6587;&#x7AE0;&#x5185;&#x5BB9;&#x53CA;&#x6807;&#x7B7E;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wo&#x5728;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;similar&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6211;&#x5728;&#x5DF4;&#x9ECE;&quot;</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="16-tailormaterialcreate-tags">16. /tailor/material/create-tags</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x6807;&#x7B7E; &#x5E76;&#x8FD4;&#x56DE;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;names&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;&#x6807;&#x7B7E;1&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;&#x6807;&#x7B7E;2&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6807;&#x7B7E;1&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6807;&#x7B7E;2&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="17-tailormaterialcreate-text-from-sys">17. /tailor/material/create-text-from-sys</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x5C06;&#x7CFB;&#x7EDF;&#x7D20;&#x6750;&#x4FDD;&#x5B58;&#x4E3A;&#x6211;&#x7684;&#x7D20;&#x6750;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;content&quot;</span><span class="token operator">:</span><span class="token string">&quot;content text text text&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;tag name&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;code&quot;</span><span class="token operator">:</span><span class="token number">1111</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span> 
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="18-tailormaterialcreate-text-self-edit">18. /tailor/material/create-text-self-edit</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x4FDD;&#x5B58;&#x81EA;&#x5DF1;&#x7F16;&#x8F91;&#x7684;&#x7D20;&#x6750; &#x7F16;&#x8F91;&#x5185;&#x5BB9;&#x957F;&#x5EA6;&#x5927;&#x4E8E;10&#x624D;&#x5165;&#x5E93;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> 
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;content&quot;</span><span class="token operator">:</span><span class="token string">&quot;content text text text&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;tag name&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;code&quot;</span><span class="token operator">:</span><span class="token number">1111</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span> 
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="19-tailormaterialdelete-tags">19. /tailor/material/delete-tags</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x5220;&#x9664;&#x6807;&#x7B7E;-&#x5E76;&#x6E05;&#x9664;&#x6587;&#x672C;&#x7D20;&#x6750;&#x548C;&#x56FE;&#x7247;&#x7D20;&#x6750;&#x4E2D;&#x76F8;&#x5E94;&#x7684;&#x6807;&#x7B7E;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span> <span class="token property">&quot;codeId&quot;</span><span class="token operator">:</span> <span class="token number">111111</span><span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="20-tailormaterialquery-system-image-simple">20. /tailor/material/query-system-image-simple</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x67E5;&#x8BE2;&#x7CFB;&#x7EDF;&#x56FE;&#x7247;&#x7D20;&#x6750; - &#x72EC;&#x7ACB;&#x5B9A;&#x5236;&#x5E08;</p>
+<p><strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;cities&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token number">387523</span><span class="token punctuation">,</span><span class="token number">3114921</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;gps&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;lat&quot;</span><span class="token operator">:</span> <span class="token number">48.856614</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lng&quot;</span><span class="token operator">:</span> <span class="token number">2.35222190000002</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+       <span class="token string">&quot;&#x5DF4;&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;&#x6253;&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;&#x54E5;&#x6253;&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cities&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;page&quot;</span><span class="token operator">:</span><span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span><span class="token number">1111</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;src&quot;</span><span class="token operator">:</span><span class="token string">&quot;src-url&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span><span class="token number">232</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;custom&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="21-tailormaterialquery-system-text-simple">21. /tailor/material/query-system-text-simple</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x67E5;&#x8BE2;&#x7CFB;&#x7EDF;&#x6587;&#x5B57;&#x7D20;&#x6750; - &#x72EC;&#x7ACB;&#x5B9A;&#x5236;&#x5E08;
+<strong>&#x8BF4;&#x660E;</strong>&#xFF1A;&#x540C;&#x4E0A;</p>
+<h3 id="22-tailormaterialstatistics-text-img">22. /tailor/material/statistics-text-img</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x7D20;&#x6750;&#x7EDF;&#x8BA1;</p>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;textCount&quot;</span><span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;imgCount&quot;</span><span class="token operator">:</span><span class="token number">200</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="23-tailormaterialupdate-image">23. /tailor/material/update-image</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x4FEE;&#x6539;&#x56FE;&#x7247;&#x7D20;&#x6750;
+<strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;textCount&quot;</span><span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;imgCount&quot;</span><span class="token operator">:</span><span class="token number">200</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="24-tailormaterialupdate-image">24. /tailor/material/update-image</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x4FEE;&#x6539;&#x56FE;&#x7247;&#x7D20;&#x6750;
+<strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span><span class="token number">1111</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;src&quot;</span><span class="token operator">:</span><span class="token string">&quot;src-url&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token punctuation">{</span><span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;tagName&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;city&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;code&quot;</span><span class="token operator">:</span><span class="token number">1111</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;textCount&quot;</span><span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;imgCount&quot;</span><span class="token operator">:</span><span class="token number">200</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="25-tailormaterialuser-tags">25. /tailor/material/user-tags</h3>
+<p><strong>&#x63CF;&#x8FF0;</strong>&#xFF1A;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x6807;&#x7B7E;
+<strong>request</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span><span class="token string">&quot;&#x5DF4;&#x9ECE;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>response</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span><span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;bali&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;code&quot;</span><span class="token operator">:</span><span class="token number">111111</span><span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span><span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="resource.html" class="navigation navigation-prev " aria-label="Previous page: 资源">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="user.html" class="navigation navigation-next " aria-label="Next page: 用户">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"素材管理","level":"1.3","depth":1,"next":{"title":"用户","level":"1.4","depth":1,"path":"content/user.md","ref":"content/user.md","articles":[]},"previous":{"title":"资源","level":"1.2","depth":1,"path":"content/resource.md","ref":"content/resource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">3.0.0","theme":"default","variables":{},"plugins":["edit-link","prism","github"],"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/zouke-api/tailor/tree/master"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zouke-api/tailor/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/material.md","mtime":"2017-11-06T03:01:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-06T03:29:41.438Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
